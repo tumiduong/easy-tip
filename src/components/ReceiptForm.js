@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-export default function Receipt() {
+export default function ReceiptForm() {
     const [total, setTotal] = useState('')
     const [tip, setTip] = useState('')
     const [split, setSplit] = useState('')
@@ -41,10 +41,13 @@ export default function Receipt() {
 }
 
 const Wrapper = styled.div`
+margin-top: 30px;
 
 input {
     outline: none;
     border: none;
     border-bottom: 1px dotted black;
+    margin: 0px 5px;
+    width: 55px;
 }
 `
