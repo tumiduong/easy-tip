@@ -9,7 +9,7 @@ export default function Receipt() {
     return (
         <Wrapper>
             <form autoComplete='off'>
-                <div>Bill Total 
+                <div>Bill Total: $
                     <input 
                         name='total' 
                         type='text' 
@@ -17,21 +17,23 @@ export default function Receipt() {
                         onChange={e => setTotal(e.target.value)}
                     />
                 </div>
-                <div>Tip Amount 
+                <div>Tip Percentage: 
                     <input 
                         name='tip' 
                         type='text' 
                         value={tip}
                         onChange={e => setTip(e.target.value)}
                     />
+                    %
                 </div>
-                <div>Split Between 
+                <div>Split between 
                     <input 
                         name='split' 
                         type='text' 
                         value={split}
                         onChange={e => setSplit(e.target.value)}
                     />
+                    people.
                 </div>
             </form>
         </Wrapper>
@@ -39,4 +41,10 @@ export default function Receipt() {
 }
 
 const Wrapper = styled.div`
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted black;
+}
 `
