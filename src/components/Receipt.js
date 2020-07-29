@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import ReceiptForm from './ReceiptForm';
 import ReceiptHistory from './ReceiptHistory';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToHistory, deleteHistory, tipHistory } from '../app/historySlice';
 
 export default function Receipt() {
     return (
