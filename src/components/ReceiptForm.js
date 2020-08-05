@@ -35,6 +35,7 @@ export default function ReceiptForm() {
                     />
                     people.
                 </div>
+                <button className='calculate-btn'>Calculate</button>
             </form>
         </Wrapper>
     )
@@ -49,5 +50,12 @@ input {
     border-bottom: 1px dotted black;
     margin: 0px 5px;
     width: 55px;
+}
+
+.calculate-btn {
+    margin-top: 15px;
+    background-color: #ddd;
+    border: 1px dashed #000;
+    border-radius: 5px;
 }
 `

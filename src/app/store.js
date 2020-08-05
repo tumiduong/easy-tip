@@ -3,6 +3,6 @@ import historyReducer from './historySlice';
 
 export default configureStore({
   reducer: {
-    counter: historyReducer,
+    history: historyReducer,
   },
 });

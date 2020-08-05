@@ -6,13 +6,18 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addToHistory, deleteHistory, tipHistory } from '../app/historySlice';
 
 export default function Receipt() {
+    const history = useSelector(tipHistory);
+    const dispatch = useDispatch();
+
+    console.log(history)
+
     return (
         <Wrapper>
             <div className='receipt-paper'>
                 <div className='header'>Easy Tip</div>
                 <div className='subheader'>- Tip Calculator -</div>
                 <ReceiptForm/>
-                <ReceiptHistory/>
+                <ReceiptHistory />
             </div>
         </Wrapper>
     )
